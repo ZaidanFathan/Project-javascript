@@ -1,96 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Website for saving links</title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archive Javascript Project</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/css/index.css">
   </head>
   <body>
-    <div class="container my-3">
-      <div class="row">
-        <div class="col-6">
-          <input
-            class="form-control"
-            type="url"
-            placeholder="Input Url"
-            aria-label="Search"
-            id="inputValue"
-          />
-        </div>
-        <div class="col-6">
-          <button class="btn btn-outline-success" onclick="add()">Input</button>
-        </div>
-      </div>
+    <div class="container">
+        <div class="container d-flex justify-content-center">
 
-      <div class="row main-row mt-3"></div>
-      <!-- Button trigger modal -->
-
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="btnUpdate"
-        data-bs-backdrop="static"
-        data-bs-keyboard="false"
-        tabindex="-1"
-        aria-labelledby="staticBackdropLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                Update Your Link
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-                id="confirmButton"
-              ></button>
+            <ul class="list-group mt-5 text-white">
+              <li class="list-group-item d-flex justify-content-between align-content-center">
+                <a href="link-saver/index.html" style="text-decoration: none; color: black;">
+                  <div class="d-flex flex-row">
+                      <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+                      <div class="ml-2">
+                          <h6 class="mb-0">Link Saver</h6>
+                          <div class="about">
+                              <span>Jum'at 31 Mei 2024</span>
+                          </div>
+                      </div>
+                  </div>
+                </a>
+              </li>  
+              
+              <li class="list-group-item d-flex justify-content-between align-content-center">
+                <a href="button-filter/index.html" style="text-decoration: none; color: black;">
+                  <div class="d-flex flex-row">
+                      <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+                      <div class="ml-2">
+                          <h6 class="mb-0">Button filter</h6>
+                          <div class="about">
+                              <span>Jum'at 31 Mei 2024</span>
+                          </div>
+                      </div>
+                  </div>
+                </a>
+              </li>  
+            </ul>
+            
             </div>
-            <div class="modal-body">
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">@</span>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="New URL"
-                  aria-label="New URL"
-                  aria-describedby="basic-addon1"
-                  id="inputValue2"
-                />
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary" id="btnConfirm">
-                Understood
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
 
-    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
   </body>
 </html>
