@@ -26,13 +26,21 @@
         </div>
         <div class="col-6">
           <button class="btn btn-outline-success" onclick="add()">Input</button>
+          <button
+            type="button"
+            class="btn btn-outline-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            How to use
+          </button>
         </div>
       </div>
 
       <div class="row main-row mt-3"></div>
       <!-- Button trigger modal -->
 
-      <!-- Modal -->
+      <!-- Modal 1 -->
       <div
         class="modal fade"
         id="btnUpdate"
@@ -79,6 +87,50 @@
               </button>
               <button type="button" class="btn btn-primary" id="btnConfirm">
                 Understood
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                How to use this site
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="src/media/Untitled design.mp4"
+                  title="Video to use this site"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Ok
               </button>
             </div>
           </div>
