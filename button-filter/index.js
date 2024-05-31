@@ -121,15 +121,3 @@ radio.forEach((element) => {
     });
   });
 });
-
-// Untuk melihat perubahanya uncommand p pada foreach dan commend p diluar foreach
-let menu = ["Cookie", "Pizza", "Milkshake", "Soda", "Burger"];
-let list = document.getElementById("myList");
-let p = document.createElement("p");
-menu.forEach((menu) => {
-  // let p = document.createElement("p");
-  p.innerText = menu;
-  list.appendChild(p);
-});
-
-// css 3 javascript 2 php 2
